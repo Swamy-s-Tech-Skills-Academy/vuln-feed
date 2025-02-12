@@ -19,6 +19,23 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnFeed.Loader.Tests", "te
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VulnFeed.Web.Tests", "tests\VulnFeed.Web.Tests\VulnFeed.Web.Tests.csproj", "{224E9F29-ACAE-4AF5-A1C7-F9439D446240}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{8EC462FD-D22E-90A8-E5CE-7E832BA40C5D}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+		README.md = README.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+	ProjectSection(SolutionItems) = preProject
+		docs\architecture.md = docs\architecture.md
+		docs\setup.md = docs\setup.md
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{C999E6E4-80E0-4997-9F6B-78E3D9C425C5}"
+	ProjectSection(SolutionItems) = preProject
+		docs\images\A.txt = docs\images\A.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -112,5 +129,6 @@ Global
 		{5DED58E9-820D-49E6-9841-CCDB5DC9C22C} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{A165614D-EACD-4002-AD53-55DBC923CC38} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{224E9F29-ACAE-4AF5-A1C7-F9439D446240} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
+		{C999E6E4-80E0-4997-9F6B-78E3D9C425C5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 	EndGlobalSection
 EndGlobal
