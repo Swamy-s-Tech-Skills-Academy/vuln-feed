@@ -36,6 +36,18 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "images", "images", "{C999E6
 		docs\images\A.txt = docs\images\A.txt
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "postgres", "postgres", "{991A245B-C381-4403-BC23-257B4371F4ED}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker", "docker", "{401B7590-2311-4AF0-A880-DF78E931498F}"
+	ProjectSection(SolutionItems) = preProject
+		postgres\docker\Dockerfile = postgres\docker\Dockerfile
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docker-entrypoint-initdb.d", "docker-entrypoint-initdb.d", "{7F042915-D485-4805-8C7B-84FB79E88D46}"
+	ProjectSection(SolutionItems) = preProject
+		postgres\docker\docker-entrypoint-initdb.d\001-make-vulnfeed-db.sql = postgres\docker\docker-entrypoint-initdb.d\001-make-vulnfeed-db.sql
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -130,5 +142,10 @@ Global
 		{A165614D-EACD-4002-AD53-55DBC923CC38} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{224E9F29-ACAE-4AF5-A1C7-F9439D446240} = {0AB3BF05-4346-4AA6-1389-037BE0695223}
 		{C999E6E4-80E0-4997-9F6B-78E3D9C425C5} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+		{401B7590-2311-4AF0-A880-DF78E931498F} = {991A245B-C381-4403-BC23-257B4371F4ED}
+		{7F042915-D485-4805-8C7B-84FB79E88D46} = {401B7590-2311-4AF0-A880-DF78E931498F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {46A9B2CB-D75F-4080-8672-CD130D7F9FB0}
 	EndGlobalSection
 EndGlobal
