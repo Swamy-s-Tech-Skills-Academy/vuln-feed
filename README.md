@@ -37,6 +37,9 @@ dotnet sln add src/VulnFeed.Loader/VulnFeed.Loader.csproj
 ## Test Projects
 
 ```powershell
+cd D:\STSA\vuln-feed>
+PS D:\STSA\vuln-feed>
+
 dotnet new xunit -n VulnFeed.Common.Tests -o tests/VulnFeed.Common.Tests
 dotnet new xunit -n VulnFeed.Domain.Tests -o tests/VulnFeed.Domain.Tests
 dotnet new xunit -n VulnFeed.Data.Tests -o tests/VulnFeed.Data.Tests
