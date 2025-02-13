@@ -27,11 +27,14 @@ dotnet sln add src/VulnFeed.Domain/VulnFeed.Domain.csproj
 dotnet new classlib -n VulnFeed.Data -o src/VulnFeed.Data
 dotnet sln add src/VulnFeed.Data/VulnFeed.Data.csproj
 
-dotnet new web -n VulnFeed.Web -o src/VulnFeed.Web
+dotnet new mvc -n VulnFeed.Web -o src/VulnFeed.Web
 dotnet sln add src/VulnFeed.Web/VulnFeed.Web.csproj
 
 dotnet new console -n VulnFeed.Loader -o src/VulnFeed.Loader
 dotnet sln add src/VulnFeed.Loader/VulnFeed.Loader.csproj
+
+dotnet new mvc -n VulnFeed.Subscription -o src/VulnFeed.Subscription
+dotnet sln add src/VulnFeed.Subscription/VulnFeed.Subscription.csproj
 ```
 
 ## Test Projects
