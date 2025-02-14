@@ -1,5 +1,5 @@
-using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using System.Diagnostics;
 using VulnFeed.Subscription.Models;
 
 namespace VulnFeed.Subscription.Controllers;
