@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using VulnFeed.Web.Models;
 
-namespace VulnFeed.Web.Controllers;
+namespace VulnFeed.Web.Controllers.Mvc;
 
 public class HomeController : Controller
 {
