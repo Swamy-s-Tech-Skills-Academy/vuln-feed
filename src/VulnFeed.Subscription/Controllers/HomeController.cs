@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-using VulnFeed.Web.Models;
+using VulnFeed.Subscription.Models;
 
-namespace VulnFeed.Web.Controllers;
+namespace VulnFeed.Subscription.Controllers;
 
 public class HomeController : Controller
 {
