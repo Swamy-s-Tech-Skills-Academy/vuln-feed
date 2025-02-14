@@ -48,10 +48,12 @@ dotnet new xunit -n VulnFeed.Domain.Tests -o tests/VulnFeed.Domain.Tests
 dotnet new xunit -n VulnFeed.Data.Tests -o tests/VulnFeed.Data.Tests
 dotnet new xunit -n VulnFeed.Web.Tests -o tests/VulnFeed.Web.Tests
 dotnet new xunit -n VulnFeed.Loader.Tests -o tests/VulnFeed.Loader.Tests
+dotnet new xunit -n VulnFeed.Loader.Tests -o tests/VulnFeed.Subscription.Tests
 
 dotnet sln add tests/VulnFeed.Common.Tests/VulnFeed.Common.Tests.csproj
 dotnet sln add tests/VulnFeed.Domain.Tests/VulnFeed.Domain.Tests.csproj
 dotnet sln add tests/VulnFeed.Data.Tests/VulnFeed.Data.Tests.csproj
 dotnet sln add tests/VulnFeed.Web.Tests/VulnFeed.Web.Tests.csproj
 dotnet sln add tests/VulnFeed.Loader.Tests/VulnFeed.Loader.Tests.csproj
+dotnet sln add tests/VulnFeed.Subscription.Tests/VulnFeed.Subscription.Tests.csproj
 ```
