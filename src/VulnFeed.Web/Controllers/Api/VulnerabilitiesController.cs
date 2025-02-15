@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using VulnFeed.Web.Domain.Interfaces.Repositories;
 using VulnFeed.Web.Domain.Interfaces.Services;
 using VulnFeed.Web.Endpoints;
 using VulnFeed.Web.Extensions;
@@ -8,11 +9,13 @@ namespace VulnFeed.Web.Controllers.Api;
 
 [Route("api/[controller]")]
 [ApiController]
-public class VulnerabilitiesController(IVulnerabilityFeedService vulnerabilityFeedService, VulnerabilityFeedEndpoints endpoints) : ControllerBase
+public class VulnerabilitiesController(IVulnerabilityFeedService vulnerabilityFeedService, 
+    VulnerabilityFeedEndpoints endpoints,  ILogger<VulnerabilitiesController> logger) : ControllerBase
 {
 
     private readonly IVulnerabilityFeedService _vulnerabilityFeedService = vulnerabilityFeedService ?? throw new ArgumentNullException(nameof(vulnerabilityFeedService));
     private readonly VulnerabilityFeedEndpoints _endpoints = endpoints ?? throw new ArgumentNullException(nameof(endpoints));
+    private readonly ILogger<VulnerabilitiesController> _logger = logger ?? throw new ArgumentNullException(nameof(logger));
 
     //[HttpGet]
     //public async Task<ActionResult<ApiPage<FullVulnerabilityRep>>> GetVulnerabilities(
