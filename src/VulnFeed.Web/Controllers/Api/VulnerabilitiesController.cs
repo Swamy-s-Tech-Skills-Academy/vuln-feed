@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using VulnFeed.Domain.Interfaces.Services;
 using VulnFeed.Web.Endpoints;
+using VulnFeed.Web.Interfaces.Services;
 
 namespace VulnFeed.Web.Controllers.Api;
 

@@ -8,7 +8,10 @@
 
 	<ItemGroup>
 	  <ProjectReference Include="..\VulnFeed.Common\VulnFeed.Common.csproj" />
-	  <ProjectReference Include="..\VulnFeed.Domain\VulnFeed.Domain.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+	  <Folder Include="Entities\" />
 	</ItemGroup>
 
 </Project>
