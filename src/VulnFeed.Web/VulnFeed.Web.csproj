@@ -6,4 +6,8 @@
 		<ImplicitUsings>enable</ImplicitUsings>
 	</PropertyGroup>
 
+	<ItemGroup>
+	  <ProjectReference Include="..\VulnFeed.Common\VulnFeed.Common.csproj" />
+	</ItemGroup>
+
 </Project>
