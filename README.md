@@ -55,3 +55,32 @@ dotnet sln add tests/VulnFeed.Web.Tests/VulnFeed.Web.Tests.csproj
 dotnet sln add tests/VulnFeed.Loader.Tests/VulnFeed.Loader.Tests.csproj
 dotnet sln add tests/VulnFeed.Subscription.Tests/VulnFeed.Subscription.Tests.csproj
 ```
+
+## Container Images
+
+There are two container images that can be build: Postgres and Vulnerability Feed. In addition, it is often useful to run Postgres locally as a container in Docker while developing locally.
+
+### Building the PostgreSQL Container Image
+
+To build the Postgres container image: (starting from the root of the repo)
+
+```powershell
+cd postgres/docker
+docker build -f Dockerfile -t vuln-postgres:latest .
+```
+
+## Running PostgreSQL in Docker
+
+Once the Postgres container image is built, it can be run in Docker and exposed locally on port 5432:
+
+```powershell
+docker run --name vuln-pg -d -p 5432:5432 -e POSTGRES_PASSWORD=secret vuln-postgres:latest
+```
+
+Note that in this repository the password `secret` is often used. This is not a realistic password. Passwords should not be committed to repositories.
+
+## Removing Existing PostgreSQL Docker container
+
+```powershell
+docker rm -f vuln-pg
+```
